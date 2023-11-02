@@ -1,0 +1,43 @@
+{
+  "name": "quicker",
+  "version": "1.0.0",
+  "description": "ecommerce",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "author": "Nilam Jyoti Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/icons": "^4.11.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "clsx": "^2.0.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "icons": "^1.0.0",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^3.0.1",
+    "npm": "^10.1.0",
+    "react": "^17.0.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilamjyotisharma/Quicker-Grocery_Delivery_WebApp-MERN.git"
+  },
+  "keywords": [
+    "Ecommerce"
+  ],
+  "bugs": {
+    "url": "https://github.com/nilamjyotisharma/Quicker-Grocery_Delivery_WebApp-MERN/issues"
+  },
+  "homepage": "https://github.com/nilamjyotisharma/Quicker-Grocery_Delivery_WebApp-MERN#readme"
+}
