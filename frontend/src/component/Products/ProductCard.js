@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactStars from "react-rating-stars-component";
 
-const Products = ({product}) => {
+const ProductCard = ({product}) => {
 
   // console.log(products);
 
@@ -48,4 +48,4 @@ const Products = ({product}) => {
   )
 }
 
-export default Products
+export default ProductCard

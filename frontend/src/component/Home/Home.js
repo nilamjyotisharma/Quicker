@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Products from '../Products/Products'
+import ProductCard from '../Products/ProductCard'
 import Metadata from '../layout/Header/Metadata'
 import { useSelector, useDispatch } from 'react-redux'
 import { getAllProducts } from '../../redux/pruducts/productSlice'
@@ -24,15 +24,6 @@ const Home = () => {
         dispatch(getAllProducts());
     }, [dispatch, error, alert]);
 
-    var settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: true
-      };
 
 
 
@@ -80,7 +71,7 @@ const Home = () => {
                 <div className='flex flex-wrap justify-evenly mx-32'>
 
                     {products && products.map((product) => (
-                        <Products product={product} />    
+                        <ProductCard product={product} />    
                     ))
                     }
 

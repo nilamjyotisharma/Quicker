@@ -6,6 +6,7 @@ import Home from './component/Home/Home.js';
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
 import ProductDetails from './component/Products/ProductDetails.js';
+import ProductsPage from './component/Products/ProductsPage.js';
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/product/:id' element={<ProductDetails />} />
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/product/:id' element={<ProductDetails />} />
+        <Route exact path='/products' element={<ProductsPage />} />
+        <Route path='/products/:keyword' element={<ProductsPage />} />
 
       </Routes>
       

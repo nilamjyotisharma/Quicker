@@ -27,8 +27,6 @@ const ReviewCard = ({review}) => {
                 <ReactStars {...options} />
 
                 <h1 className='text-[1.2rem] text-gray-700'>{review.comment}</h1>
-                          
-                {/* <h1 className='text-[1.2rem] text-gray-700'>{review.rating}</h1> */}
                         
             </div>
         </div>

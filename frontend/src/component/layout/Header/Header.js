@@ -30,9 +30,6 @@ const Header = () => {
         <div className='flex justify-between py-2 px-32 items-center bg-white shadow-xl'>
             <div><Link to='/'><img className='h-12 px-2' src={logoMain} alt='logo not found'/></Link></div>
 
-            <div>
-                <input className='bg-slate-100 rounded-lg w-80 px-6 py-2 focus:border-transparent' type='text' placeholder='Search groceries' />
-            </div>
 
             <div>
                 <ul className='flex text-neutral-600 font-medium'>
