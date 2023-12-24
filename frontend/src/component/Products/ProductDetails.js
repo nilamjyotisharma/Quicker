@@ -12,6 +12,7 @@ const ProductDetails = () => {
   const { id } = useParams()
   const dispatch = useDispatch()
   const { product, loading, error } = useSelector(state => state.productDetails)
+  const { cartItems } = useSelector(state => state.cart)
   console.log("productDetails",product.ratings);
 
   useEffect(() => {

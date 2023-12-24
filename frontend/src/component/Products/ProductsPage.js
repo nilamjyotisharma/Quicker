@@ -10,6 +10,10 @@ import Slider from '@material-ui/core/Slider';
 // import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core'
 import categories from './Categories'
+import Header from '../layout/Header/Header'
+import Footer from '../layout/Footer/Footer'
+import Metadata from '../layout/Header/Metadata'
+import { useNavigate } from 'react-router-dom'
 
 const ProductsPage = () => {
 
@@ -17,6 +21,7 @@ const ProductsPage = () => {
     const dispatch = useDispatch()
     const {products, loading, error, resultPerPage, productsCount} = useSelector(state => state.products)
     const {id} = useParams()
+    const navigate = useNavigate()
 
 
     // console.log("id",id)
@@ -60,9 +65,9 @@ const ProductsPage = () => {
         e.preventDefault();
 
         if(keyword.trim()){
-            window.location.href = `/products/${keyword}`
+            navigate(`/products/${keyword}`)
         }else{
-            window.location.href = `/products`
+            navigate(`/products`)
         }
 
     }
@@ -73,6 +78,12 @@ const ProductsPage = () => {
 
   return (
     <>
+
+    {/* <MetaData title='Products | Quicker' /> */}
+
+    <Metadata title= 'Products' />
+
+    <Header />
         {/* product section */}
 
         <div className='flex justify-center mb-20 overflow-hidden'>
@@ -190,6 +201,8 @@ const ProductsPage = () => {
                 
             </div>
         </div>
+
+    <Footer />
     </>
   )
 }

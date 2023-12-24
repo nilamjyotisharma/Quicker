@@ -8,6 +8,8 @@ import Categories from './Categories/Categories'
 import vegetables from '../../Images/categories/vegetables.png'
 import veg from '../../Images/veg.png'
 import { useAlert } from 'react-alert'
+import Header from '../layout/Header/Header'
+import Footer from '../layout/Footer/Footer'
 
 const Home = () => {
 
@@ -29,11 +31,17 @@ const Home = () => {
 
     
   return (
-    <div className='overflow-hidden'>
+
+    <>
+
+    
+
+    <Header />
+    <div className='overflow-hidden bg-bg bg-no-repeat -mt-20'>
 
         {/* Categories Section */}
 
-        <div className='flex mx-12 pt-8 pb-2 justify-evenly'>
+        <div className='flex mx-12 py-4 justify-evenly mt-20'>
             <Categories />
         </div>
 
@@ -41,14 +49,14 @@ const Home = () => {
         {/* Hero Section */}
 
 
-        <div className='mx-32 mt-4 flex'>
-            <div className='mt-4'>
-                <h1 className='text-[6.9rem] font-extrabold text-gray-700'><span className='text-[#2FA674]'>Quicker,</span> Find your <span className='text-[#2FA674]'>Grocery</span> here</h1>
+        <div className='mx-36 mt-4 flex'>
+            <div className='mt-10'>
+                <h1 className='text-[5.6rem] font-extrabold text-gray-700'><span className='text-[#2FA674]'>Quicker,</span> Find your <span className='text-[#2FA674]'>Grocery</span> here</h1>
 
                 <div className='flex items-center mt-4'>
 
-                <img className='h-20 w-20 mt-0' src={veg} alt='image not found' />
-                <p className='text-[2rem] text-gray-500 font-semibold drop-shadow-xl'>Get your groceries at doorstep</p>
+                <img className='h-16 w-16 mt-0' src={veg} alt='image not found' />
+                <p className='text-[1.6rem] text-gray-500 font-semibold drop-shadow-xl'>Get your groceries at doorstep</p>
 
                 </div>
                 
@@ -56,7 +64,7 @@ const Home = () => {
             </div>
 
             <div className='flex justify-center'>
-                <img className='h-[35rem] w-[70rem] mt-0 drop-shadow-2xl' src={vegetables} alt='image not found' />
+                <img className='h-[32rem] w-[65rem] mt-0 drop-shadow-2xl' src={vegetables} alt='image not found' />
             </div>
         </div>
 
@@ -84,6 +92,11 @@ const Home = () => {
 
 
     </div>
+
+    <Footer />
+
+    </>
+
   )
 }
 

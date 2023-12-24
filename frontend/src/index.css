@@ -42,6 +42,48 @@
     font-weight: bold;
 }
 
-.MuiSlider span{
+.registerImage > input::file-selector-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+  }
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+
+  .MuiStepConnector-line {
+    display: none !important;
+  }
+  
+  .MuiStepConnector-root {
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.349);
+  }
+  
+  .MuiStepConnector-active,
+  .MuiStepConnector-completed {
+    background-color: #2FA674;
+  }
+  .MuiPaper-root{
+    background: transparent
+  }
+
+  #MuiSvgIcon svg{
     color: #2FA674;
-}
+    height: 4rem;
+    width: 4rem;
+  }
+  #MuiTypography-root p{
+    font-size: 1.2rem;
+  }
+
+  
